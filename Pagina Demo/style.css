@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #eee;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: #eee;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  cursor: pointer;
+  background: #444;
+}
+
+button:hover {
+  background: #666;
+}
+
+nav {
+  display: flex;
+}
+
+nav button {
+  flex: 1;
+  border-radius: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 15px;
+}
+
+.post {
+  background: #1c1c1c;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#messages div {
+  margin-bottom: 5px;
+}

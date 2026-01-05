@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Anon Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="center">
+  <div class="box">
+    <h2>Acceso</h2>
+    <input type="password" id="code" placeholder="Código">
+    <button onclick="checkCode()">Entrar</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+
+  <nav>
+    <button onclick="showSection('muro')">Muro</button>
+    <button onclick="showSection('chat')">Chat</button>
+  </nav>
+
+  <!-- MURO -->
+  <section id="muro">
+    <textarea id="muroText" placeholder="Escribe algo..."></textarea>
+    <button onclick="addPost()">Publicar</button>
+    <div id="posts"></div>
+  </section>
+
+  <!-- CHAT -->
+  <section id="chat" class="hidden">
+    <div id="messages"></div>
+    <input id="chatInput" placeholder="Mensaje anónimo">
+    <button onclick="sendMessage()">Enviar</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
